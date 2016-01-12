@@ -5,5 +5,6 @@
  * Works with has_many and many_many relations.
  */
 
-define('SORTABLEFILE_DIR', basename(dirname(__FILE__)));
-define('SORTABLEFILE_PATH', BASE_PATH . '/' . SORTABLEFILE_DIR);
+$moduleDir = substr(Director::makeRelative(dirname(__FILE__)), 1);
+define('SORTABLEFILE_DIR', $moduleDir);
+
